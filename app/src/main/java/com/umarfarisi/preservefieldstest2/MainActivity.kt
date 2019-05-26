@@ -35,8 +35,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onSaveInstanceState(outState: Bundle?) {
         super.onSaveInstanceState(outState)
-        preserveField.putField(fullClassPath + "text", tvText.text.toString())
-        preserveField.save()
+        preserveField
+            .putField(fullClassPath + "text", tvText.text.toString())
+            .save()
     }
 
 }
